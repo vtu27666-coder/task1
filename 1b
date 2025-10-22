@@ -1,0 +1,15 @@
+# Function to calculate total cost
+def calculate_total_cost(x, y):
+    return x * y
+
+# Input the number of test cases
+t = int(input("Enter the number of test cases: "))
+
+# Iterate through each test case
+for i in range(t):
+    # Input for each test case
+    x, y = map(int, input("Enter x and y values separated by space: ").split())
+    
+    # Calculate and print the total amount for the current test case
+    total_amount = calculate_total_cost(x, y)
+    print("Total amount:", total_amount)
