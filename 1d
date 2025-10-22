@@ -1,0 +1,14 @@
+import math
+
+def calculate_area_in_acres(radius_in_feet):
+    # Convert radius from feet to acres (1 acre = 43560 square feet)
+    area_in_acres = math.pi * (radius_in_feet ** 2) / 43560
+    return area_in_acres
+
+# Input the radius of the field in feet
+radius_in_feet = float(input("Enter the radius of the field in feet: "))
+
+# Calculate and print the area of the field in acres
+area_in_acres = calculate_area_in_acres(radius_in_feet)
+
+print(f"The area of the field is: {area_in_acres:.2f} acres")
