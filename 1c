@@ -1,7 +1,8 @@
-def calculate_total_cost(x, y):
-    return x * y
-t = int(input("Enter the number of test cases: "))
-for i in range(t):
-    x, y = map(int, input().split())
-    total_amount = calculate_total_cost(x, y)
-    print(total_amount)
+SQFT_PER_ACRE = 43560
+
+length = float(input("Enter the length of the field in feet: "))
+width = float(input("Enter the width of the field in feet: "))
+
+acres = length * width / SQFT_PER_ACRE
+
+print("The area of the field is", acres, "acres")
